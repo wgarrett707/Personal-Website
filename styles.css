@@ -1,0 +1,192 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+}
+
+.icon {
+    color: white;
+}
+
+#about {
+    height: 100vh;
+}
+
+#projects {
+    height: 100vh;
+}
+
+#contact {
+    height: 100vh;
+}
+
+div.name-in-corner {
+    position: absolute;
+    text-align: right;
+    bottom: 12%;
+    right: 10vw;
+}
+
+.section-title {
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+
+.name-title {
+    font-size: 4rem;
+    color: #00f;
+    margin-bottom: 0;
+    line-height: 1.2;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.font-1 {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.font-2 {
+    font-family: 'Courier New', Courier;
+}
+
+.font-3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.font-4 {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+.font-5 {
+    font-size: 3rem;
+    font-family: 'Wingdings', sans-serif;
+}
+
+h2 {
+    font-weight: 100;
+}
+
+h3 {
+    margin: 0.3em;
+}
+
+nav {
+    position: fixed;
+    background-color: black;
+    z-index: 999;
+    width: 100vw;
+    background-size: cover;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p.test {
+    display: block;
+}
+
+div.about-info {
+    line-height: 1.5;
+    margin-top: 4rem;
+}
+
+div.stack span {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+div.stack i {
+    font-size: 2rem;
+    border: solid white 2px;
+    border-radius: 0.7rem;
+    padding: 0.5rem;
+}
+
+div.paragraph-text {
+    margin-bottom: 1.5rem;
+    margin-left: 10vw;
+    margin-right: 20vw;
+}
+
+div.scroll-button {
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-card {
+    display: flex;
+    cursor: pointer;
+    transition: 0.2s ease;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    max-width: 450px;
+    padding: 0.5rem;
+    border: solid white 2px;
+    border-radius: 0.7rem;
+}
+
+.contact-card i {
+    font-size: 2rem;
+}
+
+.contact-card span {
+    font-size: 1.2rem;
+}
+
+.email:hover {
+    background-color: maroon;
+    border-color: maroon;
+}
+
+.linkedin:hover {
+    background-color: navy;
+    border-color: navy;
+}
+
+.github:hover {
+    background-color: rebeccapurple;
+    border-color: rebeccapurple;
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: grey;
+}
