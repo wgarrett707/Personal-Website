@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -27,11 +28,11 @@
             <h3>computer science student at uiuc</h3>
         </div>
         <div class="about-info paragraph-text">
-            <p>Bonjour! Je vous remercie de votre visite!</p>
-            <p>I am Gervin Fung Da Xuen, and I am not French. I build software both for fun and for a living. I am passionate about open-source software, and I build websites, desktop applications, mobile applications, and development tools.</p>
-            <p>I have been coding since 2021, and it all started when I wanted to make a Chess game with Java Swing and then with the LibGDX framework. Later, during an intern applicant test, I broadened my skillset to include TypeScript and began making web and mobile applications. After some time, I began using Rust to create terminal applications.</p>
-            <p>TypeScript, Java, and Rust are my primary languages in software engineering, although I believe I am capable of using other languages as well, aside from PHP. My passion lies in the ability to work on web applications, mobile applications, and development tools. You can find my full projects list <a href="#">here</a>.</p>
-            <p>Outside of programming, I enjoy reading interesting articles, working out, and playing video games with my friends.</p>
+            <p><strong>Hi, I'm Will Garrett, a computer science undergraduate at the University of Illinois at Urbana-Champaign!</strong></p>
+            <p>I'm interested in full stack development, a skill which I have honed through working on various websites and platforms, such as Professor Tissenbaum's educational dashboard for classrooms, a startup on-campus called SeriesFarm, and some other small projects (this website, an NGO homepage, etc.).</p>
+            <p>As I continue to expand my skillset, artificial intelligence also presents great interest to me. I am currently working with a Northwestern lab that is prompt engineering LLMs to convert document segments of network protocol in natural language into finite state diagrams, and I'm implementing an emotion sentiment LLM into our speech analysis system with Professor Tissenbaum.</p>
+            <p>Most of my experience lies with Python (along with related frameworks such as Django, Flask, Pandas, and BS4) and Javascript (Node.js, React.js, and Express.js), but I've also worked a lot with C++, Kotlin, and Java. I consider myself to be a fast learner and can quickly adapt to any technology stack that a project may be using.</p>
+            <p>In my free time, I enjoy playing the guitar, working out, skateboarding, and golfing.</p>
         </div>
         <div class="scroll-button">
             <a href="#projects" class="icon"><i class="material-icons">arrow_downward</i></a>
@@ -43,6 +44,7 @@
             <h1 class="section-title">projects</h1>
             <div class="project-card">
                 <h2>LED Board</h2>
+                <img class="project-photo" src="/public/led_display_collage.png" alt="image of leds working">
                 <div class="stack">
                     <span>Stack:</span>
                     <div class="stack-icons">
@@ -50,12 +52,17 @@
                         <i class="devicon-raspberrypi-plain"></i>
                     </div>
                 </div>
-                <p>ttt</p>
-                <p>tttt</p>
-                <p>ttt</p>
+                <p class="project-desc">A 5-foot long LED display with a custom-built wooden frame fully controllable via a Bluetooth remote. The display can show scrolling stock prices (pulled directly from Yahoo Finance), current news headlines, Discord notifications, the current time and weather, and real-time YouTube subscriber counts.</p>
+                <a href="https://github.com/wgarrett707/led-displays">
+                    <div class="code-button">
+                        <i class="material-icons">code</i>
+                        <span>code</span>
+                    </div>
+                </a>
             </div>
             <div class="project-card">
                 <h2>Interactive NGO Website</h2>
+                <img class="project-photo" src="/public/ngo_site.png" alt="image of ngo website homescreen">
                 <div class="stack">
                     <span>Stack:</span>
                     <div class="stack-icons">
@@ -67,12 +74,18 @@
                         <i class="devicon-mysql-original"></i>
                     </div>
                 </div>
-                <p>ttt</p>
-                <p>tttt</p>
-                <p>ttt</p>
+                <p class="project-desc">A project for CS124H, the Honors class section for our introductory CS course. My core responsibilities were implementing the "Events" page in Bootstrap, along with the search and filtering functionality in Javascript. Events were stored in a MySQL database, which was communicated to with Express.js routes.</p>
+                <a href="https://github.com/CS196Illinois/Group33-FA23">
+                    <div class="code-button">
+                        <i class="material-icons">code</i>
+                        <span>code</span>
+                    </div>
+                </a>
             </div>
             <div class="project-card">
                 <h2>SeriesFarm</h2>
+                <span class="in-progress">IN PROGRESS</span>
+                <img class="project-photo" src="/public/seriesfarm.png" alt="image of seriesfarm homescreen">
                 <div class="stack">
                     <span>Stack:</span>
                     <div class="stack-icons">
@@ -81,9 +94,7 @@
                         <i class="devicon-postgresql-plain"></i>
                     </div>
                 </div>
-                <p>ttt</p>
-                <p>tttt</p>
-                <p>ttt</p>
+                <p class="project-desc">SeriesFarm is a startup on-campus creating a platform for farmers to find agricultural loans and grants. I led a team of three other developers to create an MVP featuring a login system, automated PDF filling, and an intuitive user interface. We are on track for deployment by around 2025.</p>
             </div>
         </div>
         

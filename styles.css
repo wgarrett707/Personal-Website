@@ -21,11 +21,11 @@ header {
 }
 
 #about {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #projects {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #contact {
@@ -41,7 +41,7 @@ div.name-in-corner {
 
 .section-title {
     margin-top: 5rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .name-title {
@@ -67,16 +67,18 @@ div.name-in-corner {
 }
 
 .font-4 {
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-family: 'Cedarville Cursive', cursive;
 }
 
 .font-5 {
     font-size: 3rem;
-    font-family: 'Wingdings', sans-serif;
+    font-family: 'Wingdings';
 }
 
 h2 {
     font-weight: 100;
+    font-size: 1.7rem;
+    margin-bottom: 0.3rem;
 }
 
 h3 {
@@ -109,13 +111,57 @@ a {
     color: white;
 }
 
-p.test {
-    display: block;
-}
-
 div.about-info {
     line-height: 1.5;
     margin-top: 4rem;
+}
+
+img.project-photo {
+    height: 40vh;
+    width: 80vw;
+    padding: 0;
+    max-width: 600px;
+    border-radius: 3rem;
+    margin: 5px 0;
+    object-fit: cover;
+}
+
+p.project-desc {
+    max-width: 800px;
+}
+
+span.in-progress {
+    display: flex;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+    width: max-content;
+    border: solid saddlebrown 3px;
+    background-color: saddlebrown;
+    padding: 0.1rem;
+    border-radius: 10px;
+}
+
+div.code-button {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    width: max-content;
+    border: solid white 3px;
+    background-color: white;
+    padding: 0.1rem 0.4rem;
+    border-radius: 100px;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+div.code-button i, div.code-button span {
+    color: black;
+}
+
+div.code-button:hover {
+    background-color: gray;
+    border-color: gray;
 }
 
 div.stack span {
@@ -128,12 +174,21 @@ div.stack i {
     border: solid white 2px;
     border-radius: 0.7rem;
     padding: 0.5rem;
+    transition: 0.2s ease;
+}
+
+div.stack i:hover {
+    color: black;
+    background-color: white;
+    border-color: white;
+
 }
 
 div.paragraph-text {
     margin-bottom: 1.5rem;
     margin-left: 10vw;
-    margin-right: 20vw;
+    margin-right: 10vw;
+    max-width: 1100px;
 }
 
 div.scroll-button {
@@ -189,4 +244,20 @@ footer {
     margin-top: 2rem;
     font-size: 0.8rem;
     color: grey;
+}
+
+@media all and (max-width: 700px) {
+    .paragraph-text {font-size: 14px;}
+    h1.name-title {font-size: 50px;}
+    .font-5 {font-size: 30px !important;}
+    .font-2 {font-size: 40px !important;}
+    div.stack i {font-size: 1.5rem;}
+    div.scroll-button {bottom: 1.5%;}
+    div.name-in-corner {bottom: 7%;}
+    .about-info {font-size: 12px;}
+}
+
+@font-face {
+    font-family: 'Wingdings';
+    src: url('/fonts/wingdings-1.woff') format('woff');
 }
